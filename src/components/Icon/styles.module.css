@@ -1,0 +1,9 @@
+
+.icon {
+    color: var(--secondary-text-color);
+    position:relative;
+}
+
+.icon:hover {
+    color: var(--tertiary-text-color);
+}

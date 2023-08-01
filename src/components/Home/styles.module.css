@@ -1,0 +1,40 @@
+.intro {
+    min-height:80vh;
+    background-image:url("../../assets/home-intro-background-full.png");
+    background-repeat:no-repeat;
+    background-size: 100vw 80vh;
+    padding-bottom:0;
+}
+
+.introText p {
+    position:absolute;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-text-color);
+}
+
+.sectionHeader {
+    text-align:center;
+}
+
+.projects {
+    padding-top:0;
+}
+
+.projectsGrid {
+    display:flex;
+    flex-direction:column;
+}
+
+.projectRow {
+    display:flex;
+    gap:5em;
+}
+
+.projectPic {
+    flex:1;
+}
+
+.projectDesc {
+    flex:3;
+}
