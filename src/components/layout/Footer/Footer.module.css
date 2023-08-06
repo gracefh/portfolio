@@ -1,0 +1,25 @@
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../../assets/footer-background.png");
+    background-size: cover;
+    min-height: 8em;
+    padding-top: 6em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+}
+
+a {
+    color: var(--secondary-text-color);
+}
+
+a:hover {
+    color: var(--tertiary-text-color);
+}

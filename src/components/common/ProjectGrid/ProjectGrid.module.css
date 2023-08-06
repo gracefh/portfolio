@@ -1,0 +1,13 @@
+.projectGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 10vw;
+}
+
+.projectGridRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;
+}

@@ -1,0 +1,26 @@
+.projectPreview {
+    /* width: 28vw; */
+    border-top: 5px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+    padding: 1rem 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.projectName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.projectDate {
+    margin-top: 0.5em;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.projectImage {
+    /* width: 28vw; */
+    width: 100%;
+    height: 24vw;
+}
