@@ -1,0 +1,13 @@
+.flexGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 5vh 10vw; */
+}
+
+.flexGridRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}

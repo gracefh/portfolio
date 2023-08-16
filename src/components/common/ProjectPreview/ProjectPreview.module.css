@@ -3,13 +3,21 @@
     border-top: 5px solid var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
     padding: 1rem 0;
-    flex-grow: 1;
-    flex-basis: 0;
+    /* flex-grow: 1;
+    flex-basis: 0; */
+    flex: 1 0;
 }
 
+.projectPreview:hover {
+    opacity: .6;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
 .projectName {
-    font-size: 1.5rem;
-    font-weight: 700;
     margin-bottom: 0;
 }
 

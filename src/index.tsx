@@ -6,16 +6,41 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./components/pages/ErrorPage/ErrorPage";
 import { AboutPage } from "./components/pages/AboutPage/AboutPage";
+import { HomePage } from "./components/pages/HomePage/HomePage";
+import { ProjectsPage } from "./components/pages/ProjectsPage/ProjectsPage";
+import { FunPage } from "./components/pages/FunPage/FunPage";
+import { ProjectPages } from "./components/pages/ProjectPages/ProjectPages";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "about",
-    element: <AboutPage />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "about/",
+        element: <AboutPage />,
+      },
+      {
+        path: "projects/",
+        element: <ProjectsPage />,
+        // children: [
+
+        // ],
+      },
+      {
+        path: "projects/:projectName",
+        element: <ProjectPages />,
+      },
+      {
+        path: "fun/",
+        element: <FunPage />,
+      },
+    ],
   },
 ]);
 

@@ -1,29 +1,51 @@
 import React from "react";
 import Styles from "./NavBar.module.css";
+import { Link, NavLink } from "react-router-dom";
+import ResumePDF from "../../../assets/grace-huang-resume-2023.pdf";
 
 type NavBarItemProps = {
   name: string;
   route: string;
+  isResume: boolean;
 };
 
 export const NavBarItem = (props: NavBarItemProps) => {
-  return (
-    <a href={`${props.route}`} className={Styles.navBarItem}>
+  return props.isResume ? (
+    <a
+      href={`${props.route}`}
+      target="_blank"
+      rel="noreferrer"
+      className={Styles.navBarItem}
+    >
       <div className={Styles.navBarItemBackground}>{props.name}</div>
       <div>{props.name}</div>
     </a>
+  ) : (
+    <NavLink
+      to={`${props.route}`}
+      className={({ isActive, isPending }) =>
+        isActive ? Styles.navBarItem + " " + Styles.active : Styles.navBarItem
+      }
+    >
+      <div className={Styles.navBarItemBackground}>{props.name}</div>
+      <div>{props.name}</div>
+    </NavLink>
   );
 };
 
 export const NavBar = () => {
   return (
     <section className={Styles.navBar}>
-      <h1 className={Styles.title}>GH</h1>
+      <h1>
+        <Link to="/" className={Styles.title}>
+          GH
+        </Link>
+      </h1>
       <div className={Styles.navBarItems}>
-        <NavBarItem name="projects" route="/projects" />
-        <NavBarItem name="fun" route="/fun" />
-        <NavBarItem name="about" route="/about" />
-        <NavBarItem name="resume" route="/resume" />
+        <NavBarItem name="projects" route="/projects" isResume={false} />
+        <NavBarItem name="fun" route="/fun" isResume={false} />
+        <NavBarItem name="about" route="/about" isResume={false} />
+        <NavBarItem name="resume" route={`${ResumePDF}`} isResume={true} />
       </div>
     </section>
   );

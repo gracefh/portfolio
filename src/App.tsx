@@ -1,9 +1,14 @@
 import React from "react";
 import "./App.css";
-import { HomePage } from "./components/pages/HomePage/HomePage";
+import { Outlet } from "react-router-dom";
+import Page from "./components/layout/Page/Page";
 
 function App() {
-  return <HomePage />;
+  return (
+    <Page>
+      <Outlet />
+    </Page>
+  );
 }
 
 export default App;

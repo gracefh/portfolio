@@ -1,0 +1,12 @@
+.intro {
+    text-align: center;
+}
+
+.intro>h2 {
+    margin-bottom: 0;
+}
+
+.intro>p {
+    margin-top: 0;
+    font-style: italic;
+}

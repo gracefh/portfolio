@@ -8,3 +8,7 @@
     align-self: stretch;
     flex-grow: 2;
 }
+
+.pageContent>section:first-of-type {
+    padding-top: 22vh;
+}

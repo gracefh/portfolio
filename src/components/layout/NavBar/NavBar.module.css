@@ -4,8 +4,14 @@
     align-items: center;
     justify-content: space-between;
     color: var(--secondary-text-color);
-    background-color: var(--primary-color);
-    padding-top: 0;
+    background: url("../../../assets/nav-bar-background.png");
+    background-size: cover;
+    min-height: 6rem;
+    padding: 0 var(--navbar-padding-side) var(--section-padding-top);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100vw - 2*var(--navbar-padding-side))
 }
 
 
@@ -29,10 +35,10 @@
 
 .navBarItem:hover {
     color: var(--tertiary-text-color);
-    -webkit-transition: all .25s ease-out;
-    -moz-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
+}
+
+.active {
+    color: var(--tertiary-text-color);
 }
 
 .navBarItem:after {
@@ -46,6 +52,7 @@
     background-color: var(--tertiary-text-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+
 }
 
 .navBarItem:hover::after {
@@ -60,10 +67,10 @@
     filter: blur(1.5px);
 }
 
-.navBarBackground:hover {
+.title {
+    color: var(--secondary-text-color);
+}
+
+.title:hover {
     color: var(--tertiary-text-color);
-    -webkit-transition: all .25s ease-out;
-    -moz-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
 }

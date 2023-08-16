@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./HomePage.module.css";
 import { ProjectPreviewProps } from "../../common/ProjectPreview/ProjectPreview";
-import { ProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
+import {
+  MainProjectGrid,
+  ProjectGrid,
+} from "../../common/ProjectGrid/ProjectGrid";
 import PlaceholderImage from "../../../assets/placeholder-background.png";
 import HomeIntroDrawing from "../../../assets/home-intro-drawing.png";
 import Page from "../../layout/Page/Page";
@@ -20,10 +23,9 @@ const placeholderProjects: ProjectPreviewProps[] = [
     projectDescription: "I did a project!",
   },
 ];
-
 export const HomePage = () => {
   return (
-    <Page>
+    <>
       <section className={styles.intro}>
         <img
           className={styles.homeIntroDrawing}
@@ -38,8 +40,8 @@ export const HomePage = () => {
       </section>
       <section className={styles.projects}>
         <h2 className={styles.sectionHeader}>projects</h2>
-        <ProjectGrid projects={placeholderProjects} columns={2} />
+        <MainProjectGrid />
       </section>
-    </Page>
+    </>
   );
 };

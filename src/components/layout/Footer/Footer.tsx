@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import Style from "./Footer.module.css";
 import { Icon } from "../../common/Icon/Icon";
 
 export const Footer = () => {
@@ -8,11 +8,26 @@ export const Footer = () => {
   const linkedin = "g-huang";
 
   return (
-    <section className={styles.footer}>
-      <div className={styles.icons}>
-        <Icon link={`https://linkedin.com/in/${linkedin}`} iconClassName={"fa fa-brands fa-linkedin fa-2x"}/>
-        <Icon link={`https://github.com/${github}`} iconClassName={"fa fa-brands fa-github fa-2x"}/>
-        <Icon link={`mailto:${email}`} iconClassName={"fa fa-solid fa-envelope fa-2x"}/>
+    <section className={Style.footer}>
+      <div>
+        <p className={Style.contact}>contact me!</p>
+      </div>
+      <div className={Style.icons}>
+        <Icon
+          link={`https://linkedin.com/in/${linkedin}`}
+          iconClassName={"fa fa-brands fa-linkedin fa-2x"}
+        />
+        <Icon
+          link={`https://github.com/${github}`}
+          iconClassName={"fa fa-brands fa-github fa-2x"}
+        />
+        <Icon
+          link={`mailto:${email}`}
+          iconClassName={"fa fa-solid fa-envelope fa-2x"}
+        />
+      </div>
+      <div>
+        <p className={Style.copyright}>© 2023 by Grace Huang</p>
       </div>
     </section>
   );

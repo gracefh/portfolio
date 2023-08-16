@@ -5,6 +5,7 @@ export type ProjectPreviewProps = {
   projectName: string;
   projectDate: string;
   projectDescription: string;
+  projectRoute?: string; // project route will be `project/:projectRoute`
 };
 
 export const ProjectPreview = (props: ProjectPreviewProps) => {
@@ -15,7 +16,7 @@ export const ProjectPreview = (props: ProjectPreviewProps) => {
         src={props.projectImage}
         alt={`${props.projectName} preview`}
       ></img>
-      <h4 className={styles.projectName}>{props.projectName}</h4>
+      <h3 className={styles.projectName}>{props.projectName}</h3>
       <p className={styles.projectDate}>{props.projectDate}</p>
       <p className={styles.projectDescription}>{props.projectDescription}</p>
     </div>
