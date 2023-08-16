@@ -28,7 +28,6 @@
 }
 
 .projectImage {
-    /* width: 28vw; */
     width: 100%;
-    height: 24vw;
+    height: auto;
 }

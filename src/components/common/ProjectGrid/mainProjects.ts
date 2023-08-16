@@ -1,9 +1,9 @@
 import { ProjectPreviewProps } from "../ProjectPreview/ProjectPreview";
 import PlaceholderImage from "../../../assets/placeholder-background.png";
-
+import MigratioMotivationsImage from "../../../assets/projects/data-vis/data-vis-preview.png"
 export const mainProjects: ProjectPreviewProps[] = [
     {
-        projectImage: PlaceholderImage,
+        projectImage: MigratioMotivationsImage,
         projectName: "Central American Migration Motivations",
         projectDate: "2023",
         projectDescription:
