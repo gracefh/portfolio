@@ -10,6 +10,7 @@ import { HomePage } from "./components/pages/HomePage/HomePage";
 import { ProjectsPage } from "./components/pages/ProjectsPage/ProjectsPage";
 import { FunPage } from "./components/pages/FunPage/FunPage";
 import { ProjectPages } from "./components/pages/ProjectPages/ProjectPages";
+import { FunPages } from "./components/pages/FunPages/FunPages";
 
 const router = createBrowserRouter([
   {
@@ -28,9 +29,6 @@ const router = createBrowserRouter([
       {
         path: "projects/",
         element: <ProjectsPage />,
-        // children: [
-
-        // ],
       },
       {
         path: "projects/:projectName",
@@ -39,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "fun/",
         element: <FunPage />,
+      },
+      {
+        path: "fun/:projectName",
+        element: <FunPages />,
       },
     ],
   },

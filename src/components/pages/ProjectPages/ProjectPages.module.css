@@ -1,0 +1,17 @@
+.projectHeader {
+    /* background-color: var(--primary-color); */
+    text-align: center;
+}
+
+.projectHeader>img {
+    width: 60%;
+    padding-top: 2rem;
+}
+
+.projectSection>p {
+    padding-left: 5vw;
+}
+
+.carouselImage {
+    max-width: 80%;
+}

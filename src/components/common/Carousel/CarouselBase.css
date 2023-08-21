@@ -1,0 +1,16 @@
+/* for carousel */
+.thumbs-wrapper {
+    text-align: center;
+}
+
+.thumb {
+    border-width: 1px !important;
+}
+
+.thumb:hover {
+    border-color: var(--primary-color) !important;
+}
+
+.thumb.selected {
+    border: 1px solid var(--primary-text-color) !important;
+}

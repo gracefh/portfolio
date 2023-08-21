@@ -3,6 +3,7 @@ import {
   ProjectPreviewProps,
 } from "../ProjectPreview/ProjectPreview";
 import styles from "./ProjectGrid.module.css";
+import { funProjects } from "./funProjects";
 import { mainProjects } from "./mainProjects";
 
 export type ProjectGridProps = {
@@ -26,4 +27,8 @@ export const ProjectGrid = (props: ProjectGridProps) => {
 
 export const MainProjectGrid = () => {
   return <ProjectGrid projects={mainProjects} />;
+};
+
+export const FunProjectGrid = () => {
+  return <ProjectGrid projects={funProjects} />;
 };

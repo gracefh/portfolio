@@ -1,10 +1,7 @@
 .projectPreview {
-    /* width: 28vw; */
     border-top: 5px solid var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
     padding: 1rem 0;
-    /* flex-grow: 1;
-    flex-basis: 0; */
     flex: 1 0;
 }
 
@@ -19,6 +16,7 @@
 
 .projectName {
     margin-bottom: 0;
+    color: var(--primary-text-color);
 }
 
 .projectDate {

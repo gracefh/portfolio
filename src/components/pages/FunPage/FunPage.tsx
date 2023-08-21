@@ -1,4 +1,4 @@
-import { MainProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
+import { FunProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
 import Style from "./FunPage.module.css";
 
 export const FunPage = () => {
@@ -9,7 +9,7 @@ export const FunPage = () => {
           <h2>fun</h2>
           <p>my side quests!</p>
         </div>
-        <MainProjectGrid />
+        <FunProjectGrid />
       </section>
     </>
   );

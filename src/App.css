@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ABCCB2;
+  --primary-color: rgb(171, 204, 178);
   --secondary-color: #F1B7B2;
   --tertiary-color: #D8E2DC;
   --primary-text-color: #583640;
@@ -10,10 +10,13 @@
   --section-padding-side: 15vw;
 
   --navbar-padding-side: 10vw;
+
+  --all-transition: all .5s ease;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--secondary-text-color);
 }
 
 main {
@@ -24,9 +27,6 @@ section {
   padding: var(--section-padding-top) var(--section-padding-side);
 }
 
-main:first-child {
-  padding-top: 20vh;
-}
 
 h1 {
   font-size: 2.5rem;

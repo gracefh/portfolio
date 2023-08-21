@@ -34,7 +34,7 @@ export const HomePage = () => {
         />
         <div className={styles.introText}>
           <p>Hi! I'm Grace, a senior at MIT studying</p>
-          <p>Computer Science | Human Computer Interaction | Web Engineering</p>
+          <p>Computer Science and Human Computer Interaction</p>
           <p>Nice To Meet You!</p>
         </div>
       </section>

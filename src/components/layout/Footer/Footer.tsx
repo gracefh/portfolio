@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <section className={Style.footer}>
       <div>
-        <p className={Style.contact}>contact me!</p>
+        <h3 className={Style.contact}>Let's Connect!</h3>
       </div>
       <div className={Style.icons}>
         <Icon
