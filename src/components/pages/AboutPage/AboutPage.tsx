@@ -9,11 +9,11 @@ export const AboutPage = () => {
         <h2>about me</h2>
         <FlexGrid columns={2}>
           <div className={Style.aboutImage}>
-            <img src={GraceFace} alt={"Grace's Headshot!"}></img>
+            <img src={GraceFace} alt={"Grace's Face"}></img>
           </div>
           <div className={Style.aboutContent}>
             <p>
-              Hello! My name is Grace Huang, and I'm a current senior and
+              Hello! My name is Grace Huang, and I'm currently a senior and
               Master's student at MIT studying Computer Science. Through my time
               at MIT, I have become passionate about Human Computer Interaction,
               not only through taking courses like Intelligent Multimodal User

@@ -14,3 +14,7 @@
 .thumb.selected {
     border: 1px solid var(--primary-text-color) !important;
 }
+
+.slider-wrapper {
+    height: auto !important;
+}

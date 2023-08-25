@@ -60,15 +60,8 @@ p {
   filter: blur(1.5px);
 }
 
-a {
+a, button {
   text-decoration: none;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-a:hover {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -92,6 +85,15 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.text-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: var(--secondary-color);
+}
+
 .page-intro {
   text-align: center;
 }
@@ -103,4 +105,13 @@ a:hover {
 .page-intro>p {
   margin-top: 0;
   font-style: italic;
+}
+
+
+iframe {
+  display: block;
+  margin: auto;
+  width: 50vw;
+  height: calc(50vw * 481 / 855);
+  border: none;
 }

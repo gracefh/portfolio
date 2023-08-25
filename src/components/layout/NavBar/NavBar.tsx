@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Styles from "./NavBar.module.css";
 import { Link, NavLink } from "react-router-dom";
 import ResumePDF from "../../../assets/grace-huang-resume-2023.pdf";
@@ -34,19 +34,51 @@ export const NavBarItem = (props: NavBarItemProps) => {
 };
 
 export const NavBar = () => {
+  let [displayHamburger, setDisplayHamburger] = useState(false);
+
+  const removeHamburger = () => {
+    console.log("clicked");
+    setDisplayHamburger(false);
+    // ev.stopPropagation();
+  };
+  const onClickHamburger = () => {
+    setDisplayHamburger(!displayHamburger);
+    if (displayHamburger === true) {
+      document.addEventListener("click", removeHamburger, {
+        // passive: true,
+        once: true,
+      });
+    }
+  };
+
   return (
     <section className={Styles.navBar}>
-      <h1>
-        <Link to="/" className={Styles.title}>
-          GH
-        </Link>
-      </h1>
+      <Link to="/" className={Styles.title}>
+        <h1 className={Styles.titleText}>GH</h1>
+      </Link>
       <div className={Styles.navBarItems}>
         <NavBarItem name="projects" route="/projects" isResume={false} />
         <NavBarItem name="fun" route="/fun" isResume={false} />
         <NavBarItem name="about" route="/about" isResume={false} />
         <NavBarItem name="resume" route={`${ResumePDF}`} isResume={true} />
       </div>
+      <button onClick={onClickHamburger} className={Styles.hamburger}>
+        <i className="fa fa-solid fa-bars fa-lg"></i>
+      </button>
+      {displayHamburger && (
+        <>
+          {/* <div className={Styles.blocker} onClick={onClickHamburger}></div> */}
+          <div
+            onClick={removeHamburger}
+            className={Styles.navBarItemsHamburger}
+          >
+            <NavBarItem name="projects" route="/projects" isResume={false} />
+            <NavBarItem name="fun" route="/fun" isResume={false} />
+            <NavBarItem name="about" route="/about" isResume={false} />
+            <NavBarItem name="resume" route={`${ResumePDF}`} isResume={true} />
+          </div>
+        </>
+      )}
     </section>
   );
 };

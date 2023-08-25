@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { KoiCardsPage } from "./pages/KoiCardsPage";
 import { SyncoPage } from "./pages/SyncoPage";
 import { LampPage } from "./pages/LampPage";
+import { ErrorMessage } from "../ErrorPage/ErrorPage";
 
 export const FunPages = () => {
   let urlParams = useParams();
@@ -20,7 +21,7 @@ export const FunPages = () => {
       page = <SyncoPage />;
       break;
     default:
-      page = <section>{projectName}: under construction</section>;
+      page = <ErrorMessage />;
   }
 
   return page;

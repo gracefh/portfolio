@@ -1,11 +1,11 @@
 import { ProjectPreviewProps } from "../ProjectPreview/ProjectPreview";
-import PlaceholderImage from "../../../assets/placeholder-background.png";
+import LampImage from "../../../assets/project-previews/lamp-preview.png";
 import KoiCardsImage from "../../../assets/project-previews/koi-cards-preview.png"
 import SyncoImage from "../../../assets/project-previews/synco-preview.png"
 
 export const funProjects: ProjectPreviewProps[] = [
     {
-        projectImage: PlaceholderImage,
+        projectImage: LampImage,
         projectName: "Mountain Lamp",
         projectDate: "2023",
         projectDescription:

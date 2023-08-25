@@ -18,8 +18,8 @@ export const ProjectGrid = (props: ProjectGridProps) => {
 
   return (
     <div className={styles.projectGrid}>
-      {projects.map((project) => (
-        <ProjectPreview {...project} />
+      {projects.map((project, ind) => (
+        <ProjectPreview key={ind} {...project} />
       ))}
     </div>
   );

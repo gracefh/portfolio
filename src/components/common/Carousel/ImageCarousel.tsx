@@ -9,6 +9,8 @@ export const ImageCarousel = (props: React.PropsWithChildren<{}>) => {
     showArrows: true,
     showStatus: false,
     infiniteLoop: true,
+    dynamicHeight: true,
+    showIndicators: false,
     renderArrowNext: (clickHandler: any, hasNext: boolean) => {
       return (
         hasNext && (
@@ -33,23 +35,23 @@ export const ImageCarousel = (props: React.PropsWithChildren<{}>) => {
         )
       );
     },
-    renderIndicator: (
-      clickHandler: any,
-      isSelected: boolean,
-      index: number
-    ) => {
-      return (
-        <li
-          onClick={clickHandler}
-          className={`${Style.ind} ${isSelected ? Style.active : ""}`}
-          key={index}
-          role="button"
-        ></li>
-      );
-    },
+    // renderIndicator: (
+    //   clickHandler: any,
+    //   isSelected: boolean,
+    //   index: number
+    // ) => {
+    //   return (
+    //     <li
+    //       onClick={clickHandler}
+    //       className={`${Style.ind} ${isSelected ? Style.active : ""}`}
+    //       key={index}
+    //       role="button"
+    //     ></li>
+    //   );
+    // },
   };
   return (
-    <Carousel {...carouselProps}>
+    <Carousel className={Style.carousel} {...carouselProps}>
       {React.Children.toArray(props.children) as ReactChild[]}
     </Carousel>
   );

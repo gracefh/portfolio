@@ -1,0 +1,25 @@
+.scrollButton {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 2em;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity .5s ease;
+    font: inherit;
+    color: var(--primary-text-color);
+    font-size: .9rem;
+    background: none;
+    border: none;
+
+    &.visible:hover {
+        opacity: .9;
+        cursor: pointer;
+    }
+}
+
+/* .scrollButton */
+
+.visible {
+    opacity: .6;
+}
