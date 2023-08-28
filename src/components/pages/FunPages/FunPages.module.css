@@ -16,3 +16,22 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+
+.flexItem {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+
+}
+
+.flexItem>img {
+    max-width: 100%;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 1em;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 1rem;
+    padding-top: 1em;
+}
