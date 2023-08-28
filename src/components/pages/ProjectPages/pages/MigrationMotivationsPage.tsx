@@ -1,9 +1,8 @@
-import Style from "../ProjectPages.module.css";
 import HeaderImage from "../../../../assets/project-previews/mmdt-preview.png";
-import { FlexGrid } from "../../../layout/grids/FlexGrid/FlexGrid";
 import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
 import { Link } from "../../../common/Link/Link";
 
+import Style from "../ProjectPages.module.css";
 import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
 
 export const MigrationMotivationsPage = () => {

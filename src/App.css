@@ -86,7 +86,7 @@ a, button {
 }
 
 .text-link {
-  color: var(--primary-color);
+  color: var(--primary-text-color);
   text-decoration: underline;
 }
 

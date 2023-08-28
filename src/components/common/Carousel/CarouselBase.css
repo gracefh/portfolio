@@ -18,3 +18,8 @@
 .slider-wrapper {
     height: auto !important;
 }
+
+.carousel li {
+    display: flex;
+    justify-content: center;
+}
