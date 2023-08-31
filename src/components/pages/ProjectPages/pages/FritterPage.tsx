@@ -1,7 +1,8 @@
 import Style from "../ProjectPages.module.css";
 import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
-
 import HeaderImage from "../../../../assets/project-previews/fritter-preview.png";
+import ActivitySketch from "../../../../assets/fritter/fritter-activity-sketch.jpg";
+import GroupsSketch from "../../../../assets/fritter/fritter-groups-sketch.jpg";
 import { Link } from "../../../common/Link/Link";
 import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
 
@@ -65,7 +66,7 @@ export const FritterPage = () => {
         <ImageCarousel>
           <div>
             <img
-              src="/images/fritter/fritter-activity-sketch.jpg"
+              src={ActivitySketch}
               alt="Activity Monitor sketch"
               className={CarouselStyle.carouselImage}
             />
@@ -75,7 +76,7 @@ export const FritterPage = () => {
           </div>
           <div>
             <img
-              src="/images/fritter/fritter-groups-sketch.jpg"
+              src={GroupsSketch}
               alt="Groups sketch"
               className={CarouselStyle.carouselImage}
             />

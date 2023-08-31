@@ -6,15 +6,18 @@
     color: var(--secondary-text-color);
     background: url("../../../assets/nav-bar-background.png");
     background-repeat: no-repeat;
-    background-size: 100vw 20vh;
-    min-height: 20vh;
-    padding: 0 var(--navbar-padding-side) var(--section-padding-top);
+    background-size: 100vw max(20vh, 10em);
+    min-height: max(20vh, 10em);
+    padding: 0 var(--navbar-padding-side);
     position: absolute;
     left: 0;
     top: 0;
     width: calc(100vw - 2*var(--navbar-padding-side))
 }
 
+.navBar>* {
+    padding-bottom: 2em;
+}
 
 .navBarItems {
     display: flex;

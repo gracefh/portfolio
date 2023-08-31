@@ -10,5 +10,5 @@
 }
 
 .pageContent>section:first-of-type {
-    padding-top: 25vh;
+    padding-top: max(25vh, 10em);
 }

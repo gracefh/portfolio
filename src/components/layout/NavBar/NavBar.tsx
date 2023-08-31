@@ -37,7 +37,6 @@ export const NavBar = () => {
   let [displayHamburger, setDisplayHamburger] = useState(false);
 
   const removeHamburger = () => {
-    console.log("clicked");
     setDisplayHamburger(false);
     // ev.stopPropagation();
   };
@@ -67,7 +66,6 @@ export const NavBar = () => {
       </button>
       {displayHamburger && (
         <>
-          {/* <div className={Styles.blocker} onClick={onClickHamburger}></div> */}
           <div
             onClick={removeHamburger}
             className={Styles.navBarItemsHamburger}

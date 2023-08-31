@@ -1,4 +1,3 @@
-import { NavLink, Route } from "react-router-dom";
 import HeaderImage from "../../../../assets/project-previews/data-vis-preview.png";
 import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
 import Style from "../ProjectPages.module.css";

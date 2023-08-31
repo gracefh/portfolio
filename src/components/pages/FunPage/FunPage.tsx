@@ -1,5 +1,5 @@
 import { FunProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
-import Style from "./FunPage.module.css";
+// import Style from "./FunPage.module.css";
 
 export const FunPage = () => {
   return (
