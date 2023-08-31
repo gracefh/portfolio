@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./NavBar.module.css";
 import { Link, NavLink } from "react-router-dom";
-import ResumePDF from "../../../assets/grace-huang-resume-2023.pdf";
+import ResumePDF from "../../assets/grace-huang-resume-2023.pdf";
 
 type NavBarItemProps = {
   name: string;

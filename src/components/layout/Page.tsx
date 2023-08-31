@@ -1,8 +1,8 @@
 import React from "react";
-import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer/Footer";
+import { NavBar } from "./NavBar";
+import { Footer } from "./Footer";
 import styles from "./Page.module.css";
-import { BackToTopButton } from "../../common/Buttons/BackToTopButton";
+import { BackToTopButton } from "../common/Buttons/BackToTopButton";
 
 const Page = (props: React.PropsWithChildren<{}>) => {
   return (

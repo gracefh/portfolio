@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     color: var(--secondary-text-color);
-    background: url("../../../assets/nav-bar-background.png");
+    background: url("../../assets/nav-bar-background.png");
     background-repeat: no-repeat;
     background-size: 100vw max(20vh, 10em);
     min-height: max(20vh, 10em);

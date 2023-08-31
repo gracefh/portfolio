@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../layout/Page/Page";
+import Page from "../layout/Page";
 import Style from "./ErrorPage.module.css";
 import { Link } from "react-router-dom";
 

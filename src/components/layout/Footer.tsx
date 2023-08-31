@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./Footer.module.css";
-import { Icon } from "../../common/Icon/Icon";
+import { Icon } from "../common/Icon/Icon";
 
 export const Footer = () => {
   const email = "grace.f.huang@gmail.com";

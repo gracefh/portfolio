@@ -1,4 +1,4 @@
-import { FlexGrid } from "../layout/grids/FlexGrid/FlexGrid";
+import { FlexGrid } from "../layout/FlexGrid";
 import Style from "./AboutPage.module.css";
 import GraceFace from "../../assets/grace-face.jpg";
 
