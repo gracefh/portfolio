@@ -1,8 +1,8 @@
-import HeaderImage from "../../../../assets/project-previews/data-vis-preview.png";
-import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
+import HeaderImage from "../../../assets/project-previews/data-vis-preview.png";
+import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import Style from "../ProjectPages.module.css";
-import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
-import { Link } from "../../../common/Link/Link";
+import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
+import { Link } from "../../common/Link/Link";
 
 export const DataVisPage = () => {
   return (

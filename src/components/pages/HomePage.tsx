@@ -1,11 +1,11 @@
 import styles from "./HomePage.module.css";
-import { MainProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
-import HomeIntroDrawing from "../../../assets/home/home-intro-drawing.png";
-import Blob1 from "../../../assets/home/blob-1.png";
-import Blob2 from "../../../assets/home/blob-2.png";
-import { ReactComponent as TextBlob1 } from "../../../assets/home/text-blob-1.svg";
-import { ReactComponent as TextBlob2 } from "../../../assets/home/text-blob-2.svg";
-import { ReactComponent as TextBlob3 } from "../../../assets/home/text-blob-3.svg";
+import { MainProjectGrid } from "../common/ProjectGrid/ProjectGrid";
+import HomeIntroDrawing from "../../assets/home/home-intro-drawing.png";
+import Blob1 from "../../assets/home/blob-1.png";
+import Blob2 from "../../assets/home/blob-2.png";
+import { ReactComponent as TextBlob1 } from "../../assets/home/text-blob-1.svg";
+import { ReactComponent as TextBlob2 } from "../../assets/home/text-blob-2.svg";
+import { ReactComponent as TextBlob3 } from "../../assets/home/text-blob-3.svg";
 
 export const HomePage = () => {
   return (

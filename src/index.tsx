@@ -6,10 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./components/pages/ErrorPage";
 import { AboutPage } from "./components/pages/AboutPage";
-import { HomePage } from "./components/pages/HomePage/HomePage";
-import { ProjectsPage } from "./components/pages/ProjectsPage/ProjectsPage";
-import { FunPage } from "./components/pages/FunPage/FunPage";
-import { ProjectPages } from "./components/pages/ProjectPages/ProjectPages";
+import { HomePage } from "./components/pages/HomePage";
+import { ProjectsPage } from "./components/pages/ProjectsPage";
+import { FunPage } from "./components/pages/FunPage";
+import { ProjectPages } from "./components/pages/ProjectPages";
 import { FunPages } from "./components/pages/FunPages/FunPages";
 
 const router = createBrowserRouter([

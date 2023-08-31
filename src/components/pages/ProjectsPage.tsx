@@ -1,5 +1,4 @@
-import { MainProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
-import Style from "./ProjectsPage.module.css";
+import { MainProjectGrid } from "../common/ProjectGrid/ProjectGrid";
 
 export const ProjectsPage = () => {
   return (

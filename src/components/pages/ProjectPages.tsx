@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { MigrationMotivationsPage } from "./pages/MigrationMotivationsPage";
-import { FritterPage } from "./pages/FritterPage";
-import { DataVisPage } from "./pages/DataVisPage";
-import { ErrorMessage } from "../ErrorPage";
+import { MigrationMotivationsPage } from "./ProjectPages/MigrationMotivationsPage";
+import { FritterPage } from "./ProjectPages/FritterPage";
+import { DataVisPage } from "./ProjectPages/DataVisPage";
+import { ErrorMessage } from "./ErrorPage";
 
 export const ProjectPages = () => {
   let urlParams = useParams();
