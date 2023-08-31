@@ -10,7 +10,7 @@ import { HomePage } from "./components/pages/HomePage";
 import { ProjectsPage } from "./components/pages/ProjectsPage";
 import { FunPage } from "./components/pages/FunPage";
 import { ProjectPages } from "./components/pages/ProjectPages";
-import { FunPages } from "./components/pages/FunPages/FunPages";
+import { FunPages } from "./components/pages/FunPages";
 
 const router = createBrowserRouter([
   {

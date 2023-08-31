@@ -1,8 +1,8 @@
 import Style from "../FunPages.module.css";
-import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
-import HeaderImage from "../../../../assets/project-previews/koi-cards-preview.png";
-import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
-import { FlexGrid } from "../../../layout/grids/FlexGrid/FlexGrid";
+import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
+import HeaderImage from "../../../assets/project-previews/koi-cards-preview.png";
+import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
+import { FlexGrid } from "../../layout/grids/FlexGrid/FlexGrid";
 
 export const KoiCardsPage = () => {
   return (

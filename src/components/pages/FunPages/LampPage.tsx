@@ -1,7 +1,7 @@
 import Style from "../FunPages.module.css";
-import HeaderImage from "../../../../assets/project-previews/lamp-preview.png";
-import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
-import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
+import HeaderImage from "../../../assets/project-previews/lamp-preview.png";
+import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
+import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
 
 export const LampPage = () => {
   return (

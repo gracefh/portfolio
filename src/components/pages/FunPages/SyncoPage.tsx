@@ -1,8 +1,7 @@
-import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
+import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import Style from "../FunPages.module.css";
-import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
-
-import HeaderImage from "../../../../assets/project-previews/synco-preview.png";
+import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
+import HeaderImage from "../../../assets/project-previews/synco-preview.png";
 
 export const SyncoPage = () => {
   return (
