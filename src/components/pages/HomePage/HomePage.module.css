@@ -15,22 +15,21 @@
     /* width: 25vw; */
     width: auto;
     height: min(60vh, 30vw);
-    /* top: 18vh; */
+    top: 19vh;
     left: 15vw;
     animation-name: intro-drawing;
     animation-duration: 2s;
-    animation-delay: .5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 @keyframes intro-drawing {
-    from {
-        top: 17vh;
+    0% {
+        transform: translateY(-2vh);
     }
 
-    to {
-        top: 19vh;
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -39,57 +38,158 @@
     left: 13vw;
     top: 54vh;
     width: 3vw;
-    animation-name: blob-1;
-    animation-duration: 2s;
-    animation-delay: .5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: blob-1 2s infinite alternate;
 }
 
 @keyframes blob-1 {
-    from {
-        top: 57vh;
+    0% {
+        transform: translateY(3vh);
     }
 
-    to {
-        top: 54vh;
+    100% {
+        transform: translateY(0);
     }
 }
 
 /* right blob */
 .blob2 {
     left: 34vw;
-    top: 20vh;
+    top: 17vh;
     width: 3.5vw;
-    animation-name: blob-2;
-    animation-duration: 2s;
-    animation-delay: .5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: blob-2 2s infinite alternate;
 }
 
 @keyframes blob-2 {
-    from {
-        top: 20vh;
+    0% {
+        transform: translateY(3vh);
     }
 
-    to {
-        top: 17vh;
+    100% {
+        transform: translateY(0);
     }
 }
 
-.introText {
+.introText>div {
     position: absolute;
-    left: 50vw;
-    top: 15vh;
-    width: 40vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.introText p {
+
+.bubble1 {
+    top: 15vh;
+    opacity: 1;
+    left: 41vw;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 24vw 1fr;
+    animation: bubble1 5s ease-in-out 1;
+    /* animation-direction: alternate; */
+}
+
+@keyframes bubble1 {
+    0% {
+        transform: translateY(35vh);
+        opacity: 0;
+    }
+
+
+    80% {
+        transform: translateY(-1%);
+    }
+
+    90% {
+        transform: translateY(.5%);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bubble2 {
+    top: 24vh;
+    opacity: 1;
+    left: 72vw;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 16vw 1fr;
+    animation: bubble2 8s ease-in-out 1;
+
+}
+
+@keyframes bubble2 {
+    0% {
+        transform: translateY(26vh);
+        opacity: 0;
+    }
+
+    31.25% {
+        transform: translateY(26vh);
+        opacity: 0;
+    }
+
+    86% {
+        transform: translateY(-.5%);
+    }
+
+    93% {
+        transform: translateY(.5%);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bubble3 {
+    top: 45vh;
+    opacity: 1;
+    left: 62.5vw;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 10vw 1fr;
+    animation: bubble3 10s ease-in-out 1;
+}
+
+@keyframes bubble3 {
+    0% {
+        transform: translateY(9vh);
+        opacity: 0;
+    }
+
+    66% {
+        transform: translateY(9vh);
+        opacity: 0;
+    }
+
+    86% {
+        transform: translateY(-1%);
+    }
+
+    93% {
+        transform: translateY(1%);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bubbleBackground {
+    /* width: 30vw; */
+    opacity: .7;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.bubbleText {
+    z-index: 1;
+    grid-area: 1 / 1 / 2 / 2;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-text-color);
-    margin: 10vh 0;
+    padding: 1em;
 }
 
 .projects {

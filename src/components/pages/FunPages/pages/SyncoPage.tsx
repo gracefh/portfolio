@@ -2,11 +2,14 @@ import { ImageCarousel } from "../../../common/Carousel/ImageCarousel";
 import Style from "../FunPages.module.css";
 import CarouselStyle from "../../../common/Carousel/ImageCarousel.module.css";
 
+import HeaderImage from "../../../../assets/project-previews/synco-preview.png";
+
 export const SyncoPage = () => {
   return (
     <>
       <section className={Style.projectHeader}>
         <h2>Syncopasian</h2>
+        <img src={HeaderImage} alt="Synco Preview"></img>
       </section>
       <section className={Style.projectSection}>
         <h3>Intro</h3>

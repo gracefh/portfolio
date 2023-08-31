@@ -5,8 +5,9 @@
     justify-content: space-between;
     color: var(--secondary-text-color);
     background: url("../../../assets/nav-bar-background.png");
-    background-size: cover;
-    min-height: 6rem;
+    background-repeat: no-repeat;
+    background-size: 100vw 20vh;
+    min-height: 20vh;
     padding: 0 var(--navbar-padding-side) var(--section-padding-top);
     position: absolute;
     left: 0;
@@ -25,7 +26,7 @@
 
 .navBarItem {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.225rem;
     position: relative;
@@ -36,6 +37,10 @@
 
 .navBarItem:hover {
     color: var(--tertiary-text-color);
+
+    .navBarItemBackground {
+        opacity: 1;
+    }
 }
 
 .active {
@@ -62,10 +67,14 @@
 }
 
 .navBarItemBackground {
+    opacity: 0;
     position: absolute;
+    color: var(--tertiary-text-color);
     top: 2px;
     left: 0;
-    filter: blur(1.5px);
+    filter: blur(2px);
+
+    transition: all 0.5s ease;
 }
 
 .hamburger {

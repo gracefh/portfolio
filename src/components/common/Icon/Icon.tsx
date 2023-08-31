@@ -7,7 +7,7 @@ type IconProps = {
 export const Icon = ({ iconClassName, link }: IconProps) => {
   return (
     <a target="/blank" href={`${link}`} className={Styles.icon}>
-      <i className={`link-background ${iconClassName}`}></i>
+      {/* <i className={`link-background ${iconClassName}`}></i> */}
       <i className={iconClassName}></i>
     </a>
   );

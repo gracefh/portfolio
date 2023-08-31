@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./HomePage.module.css";
 import { MainProjectGrid } from "../../common/ProjectGrid/ProjectGrid";
-import PlaceholderImage from "../../../assets/placeholder-background.png";
-import HomeIntroDrawing from "../../../assets/home-intro-drawing.png";
+import HomeIntroDrawing from "../../../assets/home/home-intro-drawing.png";
+import { ReactComponent as TextBlob1 } from "../../../assets/home/text-blob-1.svg";
+import { ReactComponent as TextBlob2 } from "../../../assets/home/text-blob-2.svg";
+import { ReactComponent as TextBlob3 } from "../../../assets/home/text-blob-3.svg";
 
 export const HomePage = () => {
   return (
@@ -16,9 +18,26 @@ export const HomePage = () => {
           alt={"Drawing of Grace!"}
         />
         <div className={styles.introText}>
-          <p>Hi! I'm Grace, a senior at MIT studying</p>
-          <p>Computer Science and Human Computer Interaction</p>
-          <p>Nice To Meet You!</p>
+          <div className={styles.bubble1}>
+            <div className={styles.bubbleBackground}>
+              <TextBlob1 />
+            </div>
+            <div className={styles.bubbleText}>
+              Hi! I'm Grace, a senior and master's student at MIT
+            </div>
+          </div>
+          <div className={styles.bubble2}>
+            <div className={styles.bubbleBackground}>
+              <TextBlob2 />
+            </div>
+            <div className={styles.bubbleText}>studying CS and HCI.</div>
+          </div>
+          <div className={styles.bubble3}>
+            <div className={styles.bubbleBackground}>
+              <TextBlob3 />
+            </div>
+            <div className={styles.bubbleText}>Nice to meet you!</div>
+          </div>
         </div>
       </section>
       <section className={styles.projects}>

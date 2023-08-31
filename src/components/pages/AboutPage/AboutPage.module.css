@@ -7,10 +7,14 @@
 .aboutImage>img {
     max-width: 100%;
     height: auto;
-    border-radius: 8em;
+    padding-top: .25em;
 }
 
 .aboutContent {
     flex-grow: 2;
     flex-basis: 0;
+}
+
+.aboutContent>p {
+    margin-top: 0;
 }
