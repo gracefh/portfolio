@@ -2,6 +2,7 @@ import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import Style from "../FunPages.module.css";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
 import HeaderImage from "../../../assets/project-previews/synco-preview.png";
+import Auditions2023Image from "../../../assets/project-images/synco/audition-poster-2023.png";
 
 export const SyncoPage = () => {
   return (
