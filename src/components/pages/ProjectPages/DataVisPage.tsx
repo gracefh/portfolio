@@ -1,8 +1,14 @@
-import HeaderImage from "../../../assets/project-previews/data-vis-preview.png";
 import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import Style from "../ProjectPages.module.css";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
 import { Link } from "../../common/Link/Link";
+
+// Images
+import HeaderImage from "../../../assets/project-previews/data-vis-preview.png";
+import MLDocCharting1 from "../../../assets/project-images/data-vis/ml-doc-charting-1.png";
+import MLDocCharting2 from "../../../assets/project-images/data-vis/ml-doc-charting-2.png";
+import Visualization1 from "../../../assets/project-images/data-vis/visualization_1.png";
+import Visualization2 from "../../../assets/project-images/data-vis/visualization_2.png";
 
 export const DataVisPage = () => {
   return (
@@ -34,14 +40,14 @@ export const DataVisPage = () => {
           <div key={1}>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/data-vis/ml-doc-charting-1.png"
+              src={MLDocCharting1}
               alt=""
             />
           </div>
           <div key={2}>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/data-vis/ml-doc-charting-2.png"
+              src={MLDocCharting2}
               alt=""
             />
           </div>
@@ -107,7 +113,7 @@ export const DataVisPage = () => {
         <ImageCarousel>
           <div>
             <img
-              src="/images/data-vis/visualization_1.png"
+              src={Visualization1}
               alt="Visualization 1"
               className={CarouselStyle.carouselImage}
             />
@@ -117,7 +123,7 @@ export const DataVisPage = () => {
           </div>
           <div>
             <img
-              src="/images/data-vis/visualization_2.png"
+              src={Visualization2}
               alt="Visualization 2"
               className={CarouselStyle.carouselImage}
             />

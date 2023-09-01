@@ -1,10 +1,12 @@
 import Style from "../ProjectPages.module.css";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
+import { Link } from "../../common/Link/Link";
+import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
+
+// Images
 import HeaderImage from "../../../assets/project-previews/fritter-preview.png";
 import ActivitySketch from "../../../assets/project-images/fritter/fritter-activity-sketch.jpg";
 import GroupsSketch from "../../../assets/project-images/fritter/fritter-groups-sketch.jpg";
-import { Link } from "../../common/Link/Link";
-import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 
 export const FritterPage = () => {
   return (

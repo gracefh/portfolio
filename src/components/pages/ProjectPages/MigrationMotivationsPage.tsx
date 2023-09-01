@@ -1,8 +1,17 @@
-import HeaderImage from "../../../assets/project-previews/mmdt-preview.png";
 import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import { Link } from "../../common/Link/Link";
 import Style from "../ProjectPages.module.css";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
+
+// Images
+import HeaderImage from "../../../assets/project-previews/mmdt-preview.png";
+import DepartmentMigratingTo from "../../../assets/project-images/mmdt/department_migrating_to.png";
+import FundingAndDebtSources from "../../../assets/project-images/mmdt/funding_and_debt_sources.png";
+import InternalMigrationAndDepartments from "../../../assets/project-images/mmdt/internal_migration_and_departments.png";
+import Implementation1 from "../../../assets/project-images/mmdt/impl-1.png";
+import Implementation2 from "../../../assets/project-images/mmdt/impl-2.png";
+import Implementation3 from "../../../assets/project-images/mmdt/impl-3.png";
+import ImplementationRecording from "../../../assets/project-images/mmdt/impl-recording.mov";
 
 export const MigrationMotivationsPage = () => {
   return (
@@ -49,21 +58,21 @@ export const MigrationMotivationsPage = () => {
           <div key={1}>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/mmdt/department_migrating_to.png"
+              src={DepartmentMigratingTo}
               alt=""
             />
           </div>
           <div key={2}>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/mmdt/funding_and_debt_sources.png"
+              src={FundingAndDebtSources}
               alt=""
             />
           </div>
           <div key={3}>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/mmdt/internal_migration_and_departments.png"
+              src={InternalMigrationAndDepartments}
               alt=""
             />
           </div>
@@ -113,8 +122,6 @@ export const MigrationMotivationsPage = () => {
         </p>
         <iframe
           style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-          // width="800"
-          // height="450"
           title="Project Wireframes"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdGABJoUftUrtMTv0EmFuJM%2FWireframes%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DiWP42QLp5r4VMO4a-1"
           allowFullScreen={true}
@@ -131,22 +138,22 @@ export const MigrationMotivationsPage = () => {
           <div key={1}>
             <img
               className={Style.carouselImage}
-              src="/images/mmdt/impl-1.png"
-              alt=""
+              src={Implementation1}
+              alt="First visualization"
             />
           </div>
           <div key={2}>
             <img
               className={Style.carouselImage}
-              src="/images/mmdt/impl-2.png"
-              alt=""
+              src={Implementation2}
+              alt="Second visualization"
             />
           </div>
           <div key={3}>
             <img
               className={Style.carouselImage}
-              src="/images/mmdt/impl-3.png"
-              alt=""
+              src={Implementation3}
+              alt="Interactive portion"
             />
           </div>
         </ImageCarousel>
@@ -160,7 +167,7 @@ export const MigrationMotivationsPage = () => {
             controls={true}
             title={"Scrolling Replay"}
           >
-            <source src="/images/mmdt/impl-recording.mov" />
+            <source src={ImplementationRecording} />
           </video>
         </div>
       </section>
