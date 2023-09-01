@@ -3,6 +3,21 @@ import HeaderImage from "../../../assets/project-previews/lamp-preview.png";
 import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
 
+// images
+import MoodBoard1 from "../../../assets/project-images/lamp/mood-board-1.png";
+import MoodBoard2 from "../../../assets/project-images/lamp/mood-board-2.png";
+import Sketch1 from "../../../assets/project-images/lamp/sketch-1.png";
+import Lamp0 from "../../../assets/project-images/lamp/lamp-0.jpg";
+import Lamp2 from "../../../assets/project-images/lamp/lamp-2.jpg";
+import Lamp3 from "../../../assets/project-images/lamp/lamp-3.jpg";
+import Lamp4 from "../../../assets/project-images/lamp/lamp-4.jpg";
+import Lamp5 from "../../../assets/project-images/lamp/lamp-5.jpg";
+import Other1 from "../../../assets/project-images/lamp/other-1.jpg";
+import Other2 from "../../../assets/project-images/lamp/other-2.jpg";
+import Other3 from "../../../assets/project-images/lamp/other-3.jpg";
+import Other4 from "../../../assets/project-images/lamp/other-4.jpg";
+import Other5 from "../../../assets/project-images/lamp/other-5.jpg";
+
 export const LampPage = () => {
   return (
     <>
@@ -45,7 +60,7 @@ export const LampPage = () => {
         <ImageCarousel>
           <div>
             <img
-              src="/images/lamp/mood-board-1.png"
+              src={MoodBoard1}
               alt="Mountain lamp mood board"
               className={CarouselStyle.carouselImage}
             />
@@ -55,7 +70,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/mood-board-2.png"
+              src={MoodBoard2}
               alt="Koi lamp mood board"
               className={CarouselStyle.carouselImage}
             />
@@ -65,7 +80,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/sketch-1.png"
+              src={Sketch1}
               alt="Mountain lamp sketch"
               className={CarouselStyle.carouselImage}
             />
@@ -88,7 +103,7 @@ export const LampPage = () => {
         <ImageCarousel>
           <div>
             <img
-              src="/images/lamp/lamp-0.jpg"
+              src={Lamp0}
               alt="Final lamp"
               className={CarouselStyle.carouselImage}
             />
@@ -96,7 +111,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/lamp-2.jpg"
+              src={Lamp2}
               alt="Lamp 2"
               className={CarouselStyle.carouselImage}
             />
@@ -106,7 +121,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/lamp-3.jpg"
+              src={Lamp3}
               alt="Lamp 3"
               className={CarouselStyle.carouselImage}
             />
@@ -116,7 +131,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/lamp-4.JPG"
+              src={Lamp4}
               alt="Lamp 4"
               className={CarouselStyle.carouselImage}
             />
@@ -126,7 +141,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/lamp-5.jpg"
+              src={Lamp5}
               alt="Lamp 5"
               className={CarouselStyle.carouselImage}
             />
@@ -154,7 +169,7 @@ export const LampPage = () => {
         <ImageCarousel>
           <div>
             <img
-              src="/images/lamp/other-1.jpg"
+              src={Other1}
               alt="Laser cut bookmarks"
               className={CarouselStyle.carouselImage}
             />
@@ -164,7 +179,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/other-2.jpg"
+              src={Other2}
               alt="A mishap"
               className={CarouselStyle.carouselImage}
             />
@@ -174,7 +189,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/other-3.JPG"
+              src={Other3}
               alt="Coasters, 1"
               className={CarouselStyle.carouselImage}
             />
@@ -184,7 +199,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/other-4.jpg"
+              src={Other4}
               alt="Coasters, 2"
               className={CarouselStyle.carouselImage}
             />
@@ -194,7 +209,7 @@ export const LampPage = () => {
           </div>
           <div>
             <img
-              src="/images/lamp/other-5.jpg"
+              src={Other5}
               alt="Coasters, 3"
               className={CarouselStyle.carouselImage}
             />

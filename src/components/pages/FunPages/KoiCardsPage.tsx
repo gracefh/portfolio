@@ -1,8 +1,19 @@
 import Style from "../FunPages.module.css";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
-import HeaderImage from "../../../assets/project-previews/koi-cards-preview.png";
 import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import { FlexGrid } from "../../layout/FlexGrid";
+
+// Images
+import HeaderImage from "../../../assets/project-previews/koi-cards-preview.png";
+import SketchAceSpades from "../../../assets/project-images/koi-cards/koi-cards-sketch-ace-spades.png";
+import SketchBack1 from "../../../assets/project-images/koi-cards/koi-cards-sketch-back-1.png";
+import SketchFace1 from "../../../assets/project-images/koi-cards/koi-cards-sketch-face-1.png";
+import Aces from "../../../assets/project-images/koi-cards/koi-cards-aces.png";
+import BothBacks from "../../../assets/project-images/koi-cards/koi-cards-both-backs.png";
+import FaceHearts from "../../../assets/project-images/koi-cards/koi-cards-face-hearts.png";
+import AllBoxes from "../../../assets/project-images/koi-cards/koi-cards-printed-all-boxes.jpeg";
+import PrintedBackDark from "../../../assets/project-images/koi-cards/koi-cards-printed-back-dark.jpeg";
+import { Link } from "../../common/Link/Link";
 
 export const KoiCardsPage = () => {
   return (
@@ -25,9 +36,27 @@ export const KoiCardsPage = () => {
         </p>
         <p>
           Seeing the vast array of different designs, from Theory 11's intricate
-          [Royals deck ? idr what it's called] to crowd-funded decks like the
-          Waves Deck and Shogun deck (include links), I became curious as to
-          whether I could make some of my own designs.
+          <Link
+            href="https://store.theory11.com/collections/worlds-most-intricate-detailed-playing-cards/products/high-victorian-playing-cards"
+            className="text-link"
+          >
+            High Victorian Playing Cards
+          </Link>{" "}
+          to crowd-funded decks like the{" "}
+          <Link
+            href="https://www.kickstarter.com/projects/52kards/waves-playing-cards"
+            className="text-link"
+          >
+            Waves Playing Cards
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="https://www.kickstarter.com/projects/flagrantagenda/edo-karuta-playing-cards"
+            className="text-link"
+          >
+            Edo Karuta Playing Cards
+          </Link>
+          , I became curious as to whether I could make some of my own designs.
         </p>
       </section>
       <section className={Style.projectSection}>
@@ -51,24 +80,15 @@ export const KoiCardsPage = () => {
         </p>
         <FlexGrid columns={3}>
           <div className={Style.flexItem}>
-            <img
-              src="/images/koi-cards/koi-cards-sketch-ace-spades.png"
-              alt="Ace of Spades sketch"
-            />
+            <img src={SketchAceSpades} alt="Ace of Spades sketch" />
             <div className={Style.caption}>Ace of Spades sketch</div>
           </div>
           <div className={Style.flexItem}>
-            <img
-              src="/images/koi-cards/koi-cards-sketch-back-1.png"
-              alt="Card back sketch"
-            />
+            <img src={SketchBack1} alt="Card back sketch" />
             <div className={Style.caption}>Card back sketch</div>
           </div>
           <div className={Style.flexItem}>
-            <img
-              src="/images/koi-cards/koi-cards-sketch-face-1.png"
-              alt="Face card sketch"
-            />
+            <img src={SketchFace1} alt="Face card sketch" />
             <div className={Style.caption}>Face card sketch</div>
           </div>
         </FlexGrid>
@@ -94,7 +114,7 @@ export const KoiCardsPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/koi-cards/koi-cards-aces.png"
+              src={Aces}
               alt="Aces"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -104,7 +124,7 @@ export const KoiCardsPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/koi-cards/koi-cards-both-backs.png"
+              src={BothBacks}
               alt="Card backs"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -114,7 +134,7 @@ export const KoiCardsPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/koi-cards/koi-cards-face-hearts.png"
+              src={FaceHearts}
               alt="Heart suit face cards"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -143,7 +163,7 @@ export const KoiCardsPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/koi-cards/koi-cards-printed-all-boxes.jpeg"
+              src={AllBoxes}
               alt="Printed card boxes"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -153,7 +173,7 @@ export const KoiCardsPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/koi-cards/koi-cards-printed-back-dark.jpeg"
+              src={PrintedBackDark}
               alt="Printed dark card back"
             />
             <div className={CarouselStyle.carouselCaption}>

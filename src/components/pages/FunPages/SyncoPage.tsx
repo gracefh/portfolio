@@ -2,7 +2,10 @@ import { ImageCarousel } from "../../common/Carousel/ImageCarousel";
 import Style from "../FunPages.module.css";
 import CarouselStyle from "../../common/Carousel/ImageCarousel.module.css";
 import HeaderImage from "../../../assets/project-previews/synco-preview.png";
-import Auditions2023Image from "../../../assets/project-images/synco/audition-poster-2023.png";
+import AuditionPoster2023 from "../../../assets/project-images/synco/audition-poster-2023.png";
+import AphroditeThumbnail from "../../../assets/project-images/synco/aphrodite-thumbnail.png";
+import QuiescenceAlbumArt from "../../../assets/project-images/synco/quiescence-album-art.png";
+import ConcertPoster2021 from "../../../assets/project-images/synco/concert-poster-2021.png";
 
 export const SyncoPage = () => {
   return (
@@ -115,7 +118,7 @@ export const SyncoPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/synco/audition-poster-2023.png"
+              src={AuditionPoster2023}
               alt="2023 Fall Audition Poster"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -125,7 +128,7 @@ export const SyncoPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/synco/aphrodite-thumbnail.png"
+              src={AphroditeThumbnail}
               alt="Thumbnail for Aphrodite Music Video"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -135,7 +138,7 @@ export const SyncoPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/synco/quiescence-album-art.png"
+              src={QuiescenceAlbumArt}
               alt="Quiescence Album Art"
             />
             <div className={CarouselStyle.carouselCaption}>
@@ -145,7 +148,7 @@ export const SyncoPage = () => {
           <div>
             <img
               className={CarouselStyle.carouselImage}
-              src="/images/synco/concert-poster-2021.png"
+              src={ConcertPoster2021}
               alt="2021 Spring Concert Poster"
             />
             <div className={CarouselStyle.carouselCaption}>
