@@ -1,5 +1,5 @@
 .intro {
-    min-height: 95vh;
+    height: 95vh;
     background-image: url("../../assets/home/home-intro-background-full.png");
     background-repeat: no-repeat;
     background-size: 100vw 95vh;
@@ -11,10 +11,16 @@
     position: absolute;
 }
 
+.introDrawingWrapper {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
 .homeIntroDrawing {
+    position: absolute;
     width: auto;
     height: min(60vh, 30vw);
-    top: 19vh;
     left: 15vw;
     animation-name: intro-drawing;
     animation-duration: 2s;
@@ -89,7 +95,7 @@
 
 @keyframes bubble1 {
     0% {
-        transform: translateY(35vh);
+        transform: translateY(30vh);
         opacity: 0;
     }
 
@@ -146,9 +152,9 @@
 .bubble3 {
     top: 45vh;
     opacity: 1;
-    left: 62.5vw;
+    left: 62vw;
     grid-template-rows: auto 1fr;
-    grid-template-columns: 10vw 1fr;
+    grid-template-columns: 12vw 1fr;
     animation: bubble3 10s ease-in-out 1;
 }
 
@@ -186,7 +192,7 @@
 .bubbleText {
     z-index: 1;
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     font-weight: 700;
     padding: 1em;
 }
@@ -211,4 +217,50 @@
 
 .projectDesc {
     flex: 3;
+}
+
+
+@media only screen and (max-width:700px) {
+    .intro {
+        height: 75vh;
+        background-size: 100vw 75vh;
+    }
+
+    .introDrawingWrapper {
+        height: 75vh;
+    }
+
+    .homeIntroDrawing {
+        height: 35vw;
+        left: 12vw;
+    }
+
+    .bubbleText {
+        font-size: 2vw;
+    }
+
+    .bubble1 {
+        top: 20vh;
+        grid-template-columns: 26vw 1fr;
+    }
+
+    .bubble2 {
+        top: 24vh;
+        left: 70vw;
+        grid-template-columns: 20vw 1fr;
+    }
+
+    .bubble3 {
+        top: 40vh;
+        left: 58vw;
+        grid-template-columns: 15vw 1fr;
+    }
+
+    .blob1 {
+        top: 45vh;
+    }
+
+    .blob2 {
+        top: 17vh;
+    }
 }

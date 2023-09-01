@@ -13,11 +13,14 @@ export const HomePage = () => {
       <section className={styles.intro}>
         <img src={Blob1} alt="" className={styles.blob1} />
         <img src={Blob2} alt="" className={styles.blob2} />
-        <img
-          className={styles.homeIntroDrawing}
-          src={HomeIntroDrawing}
-          alt={"Drawing of Grace!"}
-        />
+        <div className={styles.introDrawingWrapper}>
+          <img
+            className={styles.homeIntroDrawing}
+            src={HomeIntroDrawing}
+            alt={"Drawing of Grace!"}
+          />
+        </div>
+
         <div className={styles.introText}>
           <div className={styles.bubble1}>
             <div className={styles.bubbleBackground}>

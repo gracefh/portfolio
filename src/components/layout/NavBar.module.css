@@ -85,7 +85,7 @@
     border: none;
     font: inherit;
     color: var(--secondary-text-color);
-    z-index: 2;
+    z-index: 3;
 }
 
 .hamburger:hover {
@@ -96,15 +96,16 @@
 .navBarItemsHamburger {
     position: absolute;
     padding: 2em;
-    background-color: var(--primary-color);
+    background-color: rgb(171 204 178 / 80%);
     right: 5vw;
     top: 3em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    z-index: 1;
+    z-index: 2;
     transition: all .5s ease;
     border-radius: 0 0 2em 2em;
+
 }
 
 .title {
@@ -113,19 +114,23 @@
     /* To account for spacing */
 }
 
-.blocker {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: ' ';
-    z-index: 1;
-    /* background: rgba(171, 204, 178, .2); */
+.titleBackground {
+    opacity: 0;
+    position: absolute;
+    color: var(--tertiary-text-color);
+    top: 20px;
+    filter: blur(2px);
+
+    transition: all 0.5s ease;
 }
+
 
 .title:hover {
     color: var(--tertiary-text-color);
+
+    .titleBackground {
+        opacity: 1;
+    }
 }
 
 .titleText {
@@ -154,6 +159,12 @@
 
 
 @media only screen and (max-width: 700px) {
+
+    .navBar {
+        background-size: 120vw 20vh;
+        /* to flatten the image */
+        background-position-x: -10vw;
+    }
 
     .hamburger {
         display: flex;

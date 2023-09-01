@@ -44,7 +44,6 @@ export const NavBar = () => {
     setDisplayHamburger(!displayHamburger);
     if (displayHamburger === true) {
       document.addEventListener("click", removeHamburger, {
-        // passive: true,
         once: true,
       });
     }
@@ -53,7 +52,10 @@ export const NavBar = () => {
   return (
     <section className={Styles.navBar}>
       <Link to="/" className={Styles.title}>
-        <h1 className={Styles.titleText}>GH</h1>
+        <div>
+          <h1 className={Styles.titleBackground}>GH</h1>
+          <h1 className={Styles.titleText}>GH</h1>
+        </div>
       </Link>
       <div className={Styles.navBarItems}>
         <NavBarItem name="projects" route="/projects" isResume={false} />
