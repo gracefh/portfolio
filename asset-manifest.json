@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.20dc361f.css",
-    "main.js": "/portfolio-2023/static/js/main.74125cda.js",
+    "main.js": "/portfolio-2023/static/js/main.bdc760f3.js",
     "static/js/787.d9a20797.chunk.js": "/portfolio-2023/static/js/787.d9a20797.chunk.js",
     "static/media/impl-recording.mov": "/portfolio-2023/static/media/impl-recording.33c0fbcc81813726c60f.mov",
     "static/media/aphrodite-thumbnail.png": "/portfolio-2023/static/media/aphrodite-thumbnail.9edd73bb0d9b0ad1b813.png",
@@ -57,11 +57,11 @@
     "static/media/text-blob-1.svg": "/portfolio-2023/static/media/text-blob-1.420e74679c51da974a488bcd81add131.svg",
     "static/media/text-blob-3.svg": "/portfolio-2023/static/media/text-blob-3.f6f789035706544f3bcde20885eba7a9.svg",
     "main.20dc361f.css.map": "/portfolio-2023/static/css/main.20dc361f.css.map",
-    "main.74125cda.js.map": "/portfolio-2023/static/js/main.74125cda.js.map",
+    "main.bdc760f3.js.map": "/portfolio-2023/static/js/main.bdc760f3.js.map",
     "787.d9a20797.chunk.js.map": "/portfolio-2023/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20dc361f.css",
-    "static/js/main.74125cda.js"
+    "static/js/main.bdc760f3.js"
   ]
 }
