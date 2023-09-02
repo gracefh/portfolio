@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./components/pages/ErrorPage";
 import { AboutPage } from "./components/pages/AboutPage";
 import { HomePage } from "./components/pages/HomePage";
@@ -12,7 +12,7 @@ import { FunPage } from "./components/pages/FunPage";
 import { ProjectPages } from "./components/pages/ProjectPages";
 import { FunPages } from "./components/pages/FunPages";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
