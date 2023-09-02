@@ -1,6 +1,0 @@
-.projectGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 5vh 5vw;
-    gap: 2em 2em;
-}
