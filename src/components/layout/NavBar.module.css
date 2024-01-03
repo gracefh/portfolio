@@ -75,7 +75,6 @@
     color: var(--tertiary-text-color);
     top: 2px;
     left: 0;
-    filter: blur(2px);
 
     transition: all 0.5s ease;
 }
@@ -119,7 +118,6 @@
     position: absolute;
     color: var(--tertiary-text-color);
     top: 20px;
-    filter: blur(2px);
 
     transition: all 0.5s ease;
 }

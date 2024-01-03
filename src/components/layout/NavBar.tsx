@@ -64,7 +64,7 @@ export const NavBar = () => {
         <NavBarItem name="resume" route={`${ResumePDF}`} isResume={true} />
       </div>
       <button onClick={onClickHamburger} className={Styles.hamburger}>
-        <i className="fa fa-solid fa-bars fa-lg"></i>
+        <i className="fa fa-solid fa-bars"></i>
       </button>
       {displayHamburger && (
         <>

@@ -222,12 +222,12 @@
 
 @media only screen and (max-width:700px) {
     .intro {
-        height: 75vh;
-        background-size: 100vw 75vh;
+        height: 60vh;
+        background-size: 100vw 60vh;
     }
 
     .introDrawingWrapper {
-        height: 75vh;
+        height: 60vh;
     }
 
     .homeIntroDrawing {
@@ -240,27 +240,27 @@
     }
 
     .bubble1 {
-        top: 20vh;
+        top: 16vh;
         grid-template-columns: 26vw 1fr;
     }
 
     .bubble2 {
-        top: 24vh;
+        top: 18vh;
         left: 70vw;
         grid-template-columns: 20vw 1fr;
     }
 
     .bubble3 {
-        top: 40vh;
+        top: 32vh;
         left: 58vw;
         grid-template-columns: 15vw 1fr;
     }
 
     .blob1 {
-        top: 45vh;
+        top: 40vh;
     }
 
     .blob2 {
-        top: 17vh;
+        top: 12vh;
     }
 }
