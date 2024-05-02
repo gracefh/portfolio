@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.84ff3d2a.css",
-    "main.js": "/portfolio/static/js/main.8c5532e5.js",
+    "main.css": "/portfolio/static/css/main.9d4889ac.css",
+    "main.js": "/portfolio/static/js/main.c7e2998e.js",
     "static/js/787.d9a20797.chunk.js": "/portfolio/static/js/787.d9a20797.chunk.js",
     "static/media/impl-recording.mov": "/portfolio/static/media/impl-recording.33c0fbcc81813726c60f.mov",
     "static/media/aphrodite-thumbnail.png": "/portfolio/static/media/aphrodite-thumbnail.9edd73bb0d9b0ad1b813.png",
@@ -49,19 +49,19 @@
     "static/media/funding_and_debt_sources.png": "/portfolio/static/media/funding_and_debt_sources.46e8354a740a567b2476.png",
     "static/media/sketch-1.png": "/portfolio/static/media/sketch-1.29981e400cbc5145649e.png",
     "static/media/footer-background.png": "/portfolio/static/media/footer-background.3d1bdeaea9bf42accf51.png",
-    "static/media/grace-huang-resume-2023.pdf": "/portfolio/static/media/grace-huang-resume-2023.c931b51053ec790d9a3e.pdf",
+    "static/media/grace-huang-resume-2023.pdf": "/portfolio/static/media/grace-huang-resume-2023.a4e788b2accfd7a1cfd6.pdf",
     "static/media/fritter-preview.png": "/portfolio/static/media/fritter-preview.028d0e53875a743dda2b.png",
     "static/media/home-intro-background-full.png": "/portfolio/static/media/home-intro-background-full.da25f0cd7be8ec4a8fc6.png",
     "index.html": "/portfolio/index.html",
     "static/media/text-blob-2.svg": "/portfolio/static/media/text-blob-2.5a3611669264d5ed23da03afbedf949f.svg",
     "static/media/text-blob-1.svg": "/portfolio/static/media/text-blob-1.420e74679c51da974a488bcd81add131.svg",
     "static/media/text-blob-3.svg": "/portfolio/static/media/text-blob-3.f6f789035706544f3bcde20885eba7a9.svg",
-    "main.84ff3d2a.css.map": "/portfolio/static/css/main.84ff3d2a.css.map",
-    "main.8c5532e5.js.map": "/portfolio/static/js/main.8c5532e5.js.map",
+    "main.9d4889ac.css.map": "/portfolio/static/css/main.9d4889ac.css.map",
+    "main.c7e2998e.js.map": "/portfolio/static/js/main.c7e2998e.js.map",
     "787.d9a20797.chunk.js.map": "/portfolio/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84ff3d2a.css",
-    "static/js/main.8c5532e5.js"
+    "static/css/main.9d4889ac.css",
+    "static/js/main.c7e2998e.js"
   ]
 }
