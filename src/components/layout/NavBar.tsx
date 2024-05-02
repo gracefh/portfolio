@@ -53,7 +53,7 @@ export const NavBar = () => {
     <section className={Styles.navBar}>
       <Link to="/" className={Styles.title}>
         <div>
-          <h1 className={Styles.titleBackground}>GH</h1>
+          {/* <h1 className={Styles.titleBackground}>GH</h1> */}
           <h1 className={Styles.titleText}>GH</h1>
         </div>
       </Link>
