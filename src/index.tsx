@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './pages/errorPage';
 import { Home } from './pages/home';
 import { About } from './pages/about';
@@ -14,7 +14,7 @@ import { Art } from './pages/art';
 import { Projects } from './pages/projects';
 import { ProjectPages } from './pages/projects/projectPages';
 
-const router = createBrowserRouter([{path: "/", element: <App/>, errorElement: <ErrorPage/>,
+const router = createHashRouter([{path: "/", element: <App/>, errorElement: <ErrorPage/>,
   children: [{
     path: "/",
     element: <Playground />,
