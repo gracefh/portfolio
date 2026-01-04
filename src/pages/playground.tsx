@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
-import React, { useRef } from "react";
-import { Camera, Group, InstancedMesh, Vector3 } from "three";
+import React, { useRef, useState } from "react";
+import { Camera, Group, InstancedMesh, LoadingManager, Vector3 } from "three";
 import {
   Instance,
   Instances,
@@ -157,7 +157,7 @@ export function AnimalModel(props: {
 
 useGLTF.preload("bear-mesh/bear-mesh.gltf");
 useGLTF.preload("cat-mesh/cat-mesh.gltf");
-useGLTF.preload("bunny-mesh-3/bunny-mesh-3.gltf");
+useGLTF.preload("bunny-mesh/bunny-mesh.gltf");
 useGLTF.preload("name-mesh/name-mesh.gltf");
 
 export const Playground = () => {
@@ -173,7 +173,6 @@ export const Playground = () => {
 
   return (
     <div id="canvas-container">
-      {/* <div className="text-pink instrument-sans-500 home-page--notice">best viewed on desktop</div> */}
       <Canvas>
         <ambientLight intensity={0.1} />
         <directionalLight
@@ -190,7 +189,7 @@ export const Playground = () => {
           rotation={[Math.PI / 8, -Math.PI / 3, -Math.PI / 6]}
         />
         <AnimalModel
-          fileName="bunny-mesh-3/bunny-mesh-3.gltf"
+          fileName="bunny-mesh/bunny-mesh.gltf"
           faceNode="Area_(7)"
           eyeNode="Area_(2)"
           position={[-200, 150, -300]}

@@ -8,5 +8,8 @@ export const images = [
   "image/art/2024-3-23-fly-no-border.png",
   "image/art/synco-audition-poster-2023.png",
   "image/project-previews/koi-cards-preview.png",
+  "image/art/koi-cards-printed-back-dark.jpeg",
   "image/art/synco-concert-poster-2021.png",
+  "image/art/quiescence-album-art.png",
+
 ];

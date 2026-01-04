@@ -78,7 +78,7 @@ const IconScene = (props: { color?: Color; isHovered?: boolean }) => {
           intensity={0.01}
         />
         <AnimalIcon
-          fileName="bunny-mesh-3/bunny-mesh-3.gltf"
+          fileName="bunny-mesh/bunny-mesh.gltf"
           faceNode="Area_(7)"
           eyeNode="Area_(2)"
           rotation={[0, 0, 0]}
