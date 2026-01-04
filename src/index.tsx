@@ -1,11 +1,10 @@
-import React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
+import {  createHashRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './pages/errorPage';
-import { Home } from './pages/home';
 import { About } from './pages/about';
 import { Resume } from './pages/resume';
 import App from './App';
@@ -62,9 +61,6 @@ const root = ReactDOM.createRoot(
 root.render(
     <RouterProvider router={router} />
 );
-// const root = ReactDOM.createRoot(
-//   document.getElementById('root') as HTMLElement
-// );
 // root.render(
 //   <React.StrictMode>
 //     <App />
