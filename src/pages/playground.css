@@ -1,12 +1,3 @@
-.blobs {
-  -webkit-filter: url("#goo");
-  filter: url("#goo");
-}
-
-.blob {
-  fill: white;
-}
-
 #loader {
   display: inline-block;
   position: relative;
