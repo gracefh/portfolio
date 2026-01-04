@@ -17,7 +17,6 @@
     "@types/three": "^0.182.0",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.23.26",
-    "gh-pages": "^6.3.0",
     "gsap": "^3.12.7",
     "maath": "^0.10.8",
     "matter-js": "^0.20.0",
@@ -38,7 +37,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +60,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "webpack": "^5.95.0"
   }
 }
