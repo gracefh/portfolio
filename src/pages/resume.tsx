@@ -52,8 +52,19 @@ export const Resume = () => {
             dates={"Apr 2025 - Present"}
             description={
               <ul>
-                <li>Managing 8 early-career engineers</li>
-                <li>Leading large project efforts on our core platform, as well as projects for potential customers</li>
+                <li>
+                  Scoping out projects and providing targeted support and career
+                  growth guidance for 7 early‑career engineers
+                </li>
+                <li>
+                  Leading a major project and collaborating with a UX designer
+                  to combine two main data entry pages on the Uncountable
+                  platform
+                </li>
+                <li>
+                  Presenting platform demos to influential stakeholders and
+                  leading other project efforts for prospective customers
+                </li>
               </ul>
             }
           />
@@ -65,8 +76,12 @@ export const Resume = () => {
             description={
               <ul>
                 <li>
-                  Worked on full-stack features and projects on the core pages of our
-                  platform
+                  Worked on full‑stack features and projects across the
+                  different parts of the lab data entry platform
+                </li>
+                <li>
+                  Implemented support for aligning experiment workflows across
+                  different experiments by using the Needleman‑Wunsch algorithm
                 </li>
               </ul>
             }
@@ -79,8 +94,9 @@ export const Resume = () => {
             description={
               <ul>
                 <li>
-                  Created price viewing tool for stocks using TradingView in
-                  React and Python
+                  Created internal price viewing tool for stocks using
+                  TradingView in React and Python, making it easier to see stock
+                  trends
                 </li>
                 <li>
                   Implemented an internal dashboard to visualize directed
@@ -158,10 +174,9 @@ export const Resume = () => {
             description={
               <ul>
                 <li>
-                  Designed and created a system to improve chart and diagram
-                  editing processes by combining a graphical whiteboard editor
-                  (TLDraw) with principles from a data visualization library
-                  (Bluefish)
+                  Created a chart editor that maintains relations between
+                  different elements and alters properties of those relations to
+                  improve the chart creation process
                 </li>
               </ul>
             }
@@ -198,7 +213,8 @@ export const Resume = () => {
         <div>
           <ResumeSectionHeader name="skills + interests" />
           <p>
-            <b>Programming Languages + Frameworks:</b> Typescript, React, Python, HTML, SQL
+            <b>Programming Languages + Frameworks:</b> Typescript, React,
+            Svelte, D3.js, HTML, CSS, Python, PostgreSQL, Git, LaTeX
           </p>
           <p>
             <b>Design:</b> Adobe Illustrator, Figma, Adobe After Effects
@@ -207,7 +223,8 @@ export const Resume = () => {
             <b>World Languages:</b> English (Native), Chinese (Native)
           </p>
           <p>
-            <b>Interests:</b> Full-Stack Development, Design, Singing, Cooking, Capoeira
+            <b>Interests:</b> Full‑Stack Development, Digital Art, A Cappella,
+            Cooking, Capoeira
           </p>
         </div>
       </article>
