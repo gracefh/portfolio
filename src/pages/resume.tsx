@@ -53,17 +53,18 @@ export const Resume = () => {
             description={
               <ul>
                 <li>
-                  Scoping out projects and providing targeted support and career
-                  growth guidance for 7 early‑career engineers
+                  Managing a team of 11 engineers to build a high‑throughput
+                  data platform, accelerating scientific analysis for some of
+                  the world’s largest R&D organizations
                 </li>
                 <li>
-                  Leading a major project and collaborating with a UX designer
-                  to combine two main data entry pages on the Uncountable
-                  platform
+                  Led 6 projects to combine the two main data entry pages on the
+                  platform, collaborating with a UX designer and giving demos to
+                  influential stakeholders
                 </li>
                 <li>
-                  Presenting platform demos to influential stakeholders and
-                  leading other project efforts for prospective customers
+                  Scoping out projects and tickets while providing targeted
+                  support and career growth guidance for reports
                 </li>
               </ul>
             }
@@ -76,12 +77,14 @@ export const Resume = () => {
             description={
               <ul>
                 <li>
-                  Worked on full‑stack features and projects across the
-                  different parts of the lab data entry platform
+                  Significantly improved usability of platform and
+                  interpretability of research data by aligning workflows across
+                  different customer experiments
                 </li>
                 <li>
-                  Implemented support for aligning experiment workflows across
-                  different experiments by using the Needleman‑Wunsch algorithm
+                  Increased efficiency of tracking experiment information by
+                  implementing Excel‑style unstructured data entry for
+                  experiment inputs on the platform
                 </li>
               </ul>
             }
